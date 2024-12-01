@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FITZONE GYM AND FITNESS CENTRE</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <style>
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color:white;
+    }
+    header img {
+      height: 100px;
+      margin-right: 20px;
+    }
+    header h1 {
+      flex-grow: 1;
+      margin-left: 20px;
+    }
+    header a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    header button {
+      background-color:#001F3F;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    header button:hover {
+      background-color: #444;
+    }
+    .hero {
+      
+        position: relative;
+        color:black;
+        padding: 100px 0;
+      }
+      
+      .hero {
+        background: url('https://source.unsplash.com/1600x900/?gym') no-repeat center center;
+        background-size: cover;
+        position: relative;
+        background-color:#001F3F;
+        color:white;
+        z-index: 1; /* Ensures content is above the overlay */
+      }
+      
+    
+    .section {
+      padding: 60px 0;
+      background-color:#001F3F ;
+      color:white;
+    }
+
+    footer {
+      background-color:#002B5C;
+      color: white;
+      padding: 10px 0;
+    }
+
+    /* Form styles */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, textarea {
+      margin: 10px 0;
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
+
+    .service-icon {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    /* Padding for each section */
+    .why-us, .services, .trainers, .contact {
+      padding: 60px 0;
+    }
+    .html {
+        scroll-behavior: smooth;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        display: flex;
+        flex-direction: column; /* Ensure the card contents stack vertically */
+        height: 100%; /* Make the card take full height of the column */
+      }
+      .card-body {
+        min-height: 200px; /* Adjust this value as needed */
+      }
+      
+  </style>
+</head>
+
+<body>
+  <header>
+  <div class="topnav" id="myTopnav"></div>
+    <img src='assets/images/fitzone.jpeg'alt='FitZone Gym Logo'>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;position:relative;left:10px;top:8px"><b>FITZONE GYM FITNESS CENTRE</b></h1>
+    <a href="#hero" class="active"><button>Home</button></a>
+    <a href="#about"><button>Why Us</button></a>
+    <a href="#schedule"><button>Schedule</button></a>
+    <a href="#services"><button>Services</button></a>
+    <a href="#contact"><button>Contact Us</button></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+</header>
+      
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section"style=''>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <h1 class=""style="position: relative;bottom:40px;right:20px;top:20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: #FFD700;
+"><b>WELCOME TO FGFC</b></h1>
+              <p class=""style="position: relative;bottom:30px;right:40px;top:20px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Join us at FITZONE and embark a transformative journey on health and wellness!<br> Experience the thrill of pushing your limits while surrounded by a supportive<br> community that motivates you every step of the way. Whether you're a <br>beginner or seasoned athlete our diverse classes , expert trainers<br> are here to help you achieve your goals. Embrace  challenge , <br> celebrate your progress, and discover a stronger, more vibrant you!<br> Don’t just dream about your fitness goals—make them a reality with us today!</p>
+              <div class="d-flex">
+                <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+              </div>
+            </div>  
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+              <img src="assets/img/fitzone2.jpeg" class="img-fluid animated" alt="" height="600"width="600"style="position: relative;left:30px;">
+            </div>
+          </div>
+        </div>
+  
+      </section><!-- /Hero Section -->
+      <section id="about" class="section">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title text-center">
+                <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #FF00FF;"><b>About</b></h2>
+                <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #90EE90;">
+                    Find Out More <span>About Us</span>
+                </h3>
+                <p style="color: #F08080;">Fitzone Gym and Fitness Centre is where passion meets purpose. Our goal is to make fitness accessible, enjoyable, and transformative for everyone!</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                    <img src="assets/images/fitzone3.webp" alt="About Image" class="img-fluid" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="fade-left">
+                    <img src="assets/images/fitzoneinnerimage.jpeg" alt="About Image" class="img-fluid" style="max-width: 100%; height: auto; position:relative;top:10px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                    <h3 style="color: #87CEEB; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">Why FGFC?</h3>
+                    <p style="color: #cbbbbb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">
+                        Offers a comprehensive fitness experience with diverse classes, personal training, and state-of-the-art equipment.
+                        Members enjoy a supportive community, nutritional guidance, and flexible membership options, all designed to help them achieve their health and wellness goals effectively and enjoyably.
+                        Join us to transform your fitness journey today!Expert Trainers Emphasizes the expertise and support provided by trainers, making members feel supported. Assures potential members about the quality and upkeep of the gym's facilities.
+                        Focuses on the community aspect, which can be a significant motivator for many.
+                    </p>
+                    <h3 style="color: #87CEEB; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">What Sets Us Apart</h3>
+                    <p style="color: #cbbbbb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">
+                        At Fitzone, we believe in a holistic approach to fitness. Our expert trainers not only guide you through workouts but also provide personalized fitness assessments and nutrition plans tailored to your unique needs.
+                        Our community-driven atmosphere fosters friendships and support, making it easier to stay motivated and committed to your goals.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="fade-left">
+                    <h3 style="color: #87CEEB; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">MISSION</h3>
+                    <p style="color: #cbbbbb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">
+                        To inspire and empower individuals on their fitness journeys. We are committed to providing a welcoming environment where members of all fitness levels can thrive.
+                        Through diverse classes, expert training, and personalized support, we aim to help each member achieve their health and wellness goals. Our focus is on fostering a strong community that encourages motivation, accountability, and lifelong fitness habits.
+                        Together, we strive to make fitness an enjoyable and transformative experience for everyone!
+                    </p>
+                    <h3 style="color: #87CEEB; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">VISION</h3>
+                    <p style="color: #cbbbbb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;position:relative;top:20px;">
+                        Our vision is to empower individuals to transform their lives through fitness, fostering a community of strength, wellness, and personal growth.
+                        We aspire to empower individuals to lead healthier lives and build a vibrant fitness community. Join us as we empower individuals to lead not just healthier lives, but also to discover their inner strength, build lasting connections, and inspire others to do the same.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section id="services" class="section">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title text-center">
+        <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: #FF00FF"><b>FGFC Provides Training On</b></h2>
+      </div>
+      <br>
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/personal.jpeg" class="card-img-top service-icon" alt="Personal Training">
+            <div class="card-body">
+              <h5 class="card-title"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><B>Personal Training</B></h5>
+              <p class="card-text"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">One-on-one sessions tailored to individual fitness levels and goals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/group.jpeg" class="card-img-top service-icon" alt="Group Classes">
+            <div class="card-body">
+              <h5 class="card-title"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><b>Group Classes</b></h5>
+              <p class="card-text"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Engaging classes such as yoga, spinning, HIIT, and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/second-trainer.jpg" class="card-img-top service-icon" alt="Cardio Training">
+            <div class="card-body">
+              <h5 class="card-title"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><b>Cardio Training</b></h5>
+              <p class="card-text"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Sessions designed to improve cardiovascular health through activities like treadmill running, cycling, and aerobics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/images/musclestrength.jpg" class="card-img-top service-icon" alt="Strength Training">
+            <div class="card-body">
+              <h5 class="card-title"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><b>Strength Training</b></h5>
+              <p class="card-text"style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Programs that focus on building muscle, improving endurance, and enhancing overall strength using free weights and resistance machines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Schedule Section -->
+  <section id="schedule" class="section">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title text-center">
+        <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: #FF00FF"><b>Our Weekly Schedule</b></h2>
+        <br>
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #90EE90;">Check out our weekly schedule for  classes and training sessions.</h3>
+      </div>
+      <br>
+      <br>
+      <br>
+      
+      <div class="row justify-content-center" style="width:500px;text-align: center;">
+        <div class="col-lg-10">
+          <center>
+        <table class="table table-bordered">
+            <thead>
+              <tr style="color:rgba(76, 2, 186, 1)">
+                <th style="background-color:rgba(34, 5, 255, 1);border:2px solid rgb(3, 48, 212);color: white;">Day</th>
+                <th style="background-color:rgba(34, 5, 255, 1);border:2px solid rgb(3, 48, 212);color: white;">Timings</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Sunday</td>
+                  <td>07:00AM - 11:00AM</td>
+                </tr> 
+              </tbody>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>05:00AM - 09:00PM</td>
+              </tr> 
+            </tbody>
+            <tbody>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>05:00AM - 09:00PM</td>
+                </tr> 
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>05:00AM - 09:00PM</td>
+                </tr> 
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Thursday</td>
+                  <td>05:00AM - 09:00PM</td>
+                </tr> 
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Friday</td>
+                  <td>05:00AM - 09:00PM</td>
+                </tr> 
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Saturday</td>
+                  <td>05:00AM - 09:00PM</td>
+                </tr> 
+              </tbody>
+              
+              
+          </table>
+        </center>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+        <!-- Section Title --><center>
+        <div class="container section-title" data-aos="fade-up">
+          <h2  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #FF00FF;"><b>Contact</b></h2>
+        </div><!-- End Section Title -->
+  </center>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-4" style="display: flex;flex-direction: row;justify-content: center;">
+  
+            <div class="col-lg-12">
+  
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="fa-solid fa-location-dot"style="color:#90EE90;position:relative;left:70px;top:2px;font-size:20px;"></i>
+                  <div>
+                    <h3  style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #90EE90;position:relative;left:75px;">Address</h3>
+                    <p style="position: relative;left:120px">165/17 Thanthonimalai main road,sungagate,TVR Coach,Karur <br>Tamil Nadu 639005</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="fa-solid fa-envelope"style="color:#90EE90;position:relative;left:70px;top:5px;font-size:20px;"></i>
+                  <div>
+                    <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #90EE90;position:relative;left:75px;">Email Us</h3>
+                    <p style="position: relative;left:120px">fitzone.gymandfitnesscentre@gmail.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1940255980335!2d78.08333897770918!3d10.948711461391246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2fb3a080ea05%3A0x25f4b089ab5ca718!2sFITZONE%20GYM%20AND%20FITNESS%20CENTRE!5e0!3m2!1sen!2sus!4v1727766899183!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section>
+      <!-- /Contact Section -->
+  
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index1.html;"style="text-decoration:none;" class="d-flex align-items-center">
+            <h4><span class="sitename"style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>FITZONE GYM AND <BR>FITNESS CENTRE</b></span></h4>
+          </a>
+          <div class="footer-contact pt-3">
+            <p style="color:#9b9afa">165, 17, Trichy-Karur Main Rd, Gandhi Nagar,</p>
+            <p style="color:#9b9afa">Karur, Tamilnadu-639004</p>
+            <p style="color:#9b9afa"><strong>Email:</strong> <span>fitzone.gymandfitnesscentre@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;position: relative;top:30px;"><B>Our Services</B></h4>
+          <ul >
+            <li style="color:#9b9afa;position: relative;top:50px;"> <a href="#hero"style="text-decoration:none;color:#9b9afa;" >Get Your Own Trainer</a></li>
+            <li style="color:#9b9afa;position: relative;top:50px;"> <a href="#hero"style="text-decoration:none;color:#9b9afa;" >Weight Loss</a></li>
+            <li style="color:#9b9afa;position: relative;top:50px;"> <a href="#hero"style="text-decoration:none;color:#9b9afa;" >Weight Gain Program</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+              <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;position: relative;left: 20px;top:7px;left:50px;"><B>Follow Us</B></h4>
+              <div class="social-links d-flex">
+                <a href="https://www.facebook.com/fitzone.gymandfitnesscentre/" target="_blank"style="text-decoration:none;position: relative;left: 20px;top:7px;left:60px;color:#9b9afa;" ><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/fitzone.gymandfitnesscentre" target="_blank"style="text-decoration:none;position: relative;left: 20px;top:7px;left:60px;color:#9b9afa;" ><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            
+        <div class="copyright text-center mt-4">
+          <p></p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">FGFC</strong> <span>All Rights Reserved </span>Designed and Maintained by Fitzone Gym and Fitness Centre</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <p style="position: relative;bottom:250px;"></p>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init();
+    });
+
+    function myFunction() {
+      const nav = document.getElementById("myTopnav");
+      nav.classList.toggle("responsive");
+    }
+  </script>
+</body>
+
+</html>
